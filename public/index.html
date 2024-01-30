@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagSocial</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" href="./media/blendtags.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="./index.html"><img src="./media/Group 5 (1).png" alt=""></a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="hidden-nav-links"><a href="./index.html">Home</a></li>
+            <li class="hidden-nav-links"><a href="features.html">Features</a></li>
+            <li><a href="./privacy_policy.html">Privacy</a></li>
+        </ul>
+
+
+    </nav>
+
+    <div class="bottom-navbar" id="bottom-navbar">
+        <div class="button1">
+            <div class="app-links">
+                <a href="https://apps.apple.com/in/app/tagsocial/id6443448497" target="_blank"><img src="./media/Frame 66.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.syneidisi.tagsocial" target="_blank"><img src="./media/Frame 65.png" alt=""></a>      
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="top-box">
+        <div class="text-box" >
+            <p class="heading"> Discover, Connect & Share Your World on Tags Social.</p>
+            <p class="description">Join our vibrant community of explorers, connect with like-minded individuals, & share your passions with the world. </p>
+        </div>
+        <img src="./media/Frame 213.png" alt="">
+    </div>
+
+    <div class="spacer"></div>
+
+    
+
+    <div class="text-box" id="about">
+        <p class="heading"> Transforming Social Connections</p>
+        <p class="description">Experience a new dimension of social networking that brings people together through shared interests and real-world connections. Discover the Tags Social app and unlock a world of possibilities.</p>
+        <div class="image-box">
+            <img src="./media/Group 64.png" alt="">
+        </div>
+        
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="text-box">
+        <p class="heading">Discover What’s New</p>
+        <p class="description">Our ever-advancing features enable you to unleash your creativity through innovative means.</p>
+        <div class="image-box">
+            <img src="./media/Frame 189.png" alt="">
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="text-box">
+        <p class="heading">Connect. Explore. Share. Meet New People At New Places.</p>
+        <p class="description">Embark on a journey of discovery, as Tags Social connects you with like-minded individuals at new locations. Share your stories, explore the world together, and forge meaningful connections that transcend boundaries. Join our vibrant community and make every experience a chapter in your adventure of a lifetime.</p>
+        <div class="image-box">
+            <img src="./media/OBJECTS.png" alt="">
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="./index.html">HOME</a>
+                    <a href="features.html">ABOUT</a>
+                    <a href="./privacy_policy.html">PRIVACY</a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="https://instagram.com/tags_social?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">INSTAGRAM</a>
+                    <a href="https://www.facebook.com/Syneideisi">FACEBOOK</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.syneidisi.tagsocial">TAGSOCIAL</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <a href="" style="color: #A0A0A0;">TAGSOCIAL @2021</a>
+                <a href="" style="color: #A0A0A0;">ALL RIGHTS PRESERVED</a>
+                <a href="">MADE IN INDIA</a>
+            </div>
+        </div>
+        <!-- <img src="./media/Group 152.png" alt=""> -->
+        <div class="welcome">
+            <img class="welcome_aboard1" src="./media/welcome_aboard.gif" alt="">
+            <div style="width: 5%;"></div>
+            <img class="welcome_aboard2" src="./media/On Tags Social!.png" alt="">
+        </div>
+        
+    </footer>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("bottom-navbar").style.bottom = window.matchMedia("(max-width: 650px)").matches? "100px" : "0";
+            } 
+            else {
+                document.getElementById("navbar").style.top = "-5rem";
+                document.getElementById("bottom-navbar").style.bottom = "-10rem";
+                
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    
+</body>
+</html>
